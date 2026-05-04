@@ -1,0 +1,36 @@
+
+ 
+ {% extends "base.html" %}
+ {% load static %}
+{% block title %}
+Contact Us
+{% endblock %}
+
+
+
+    {% block Form_css %} 
+    
+    <link rel="stylesheet" href="{% static 'css/form.css' %}"/> 
+
+
+{% endblock %}
+
+
+{% block content %}
+
+ <div class="sec8-p2">
+
+                <div class="sec8-p2-start">
+
+                    <div class="h2">
+                        <h2>Contact Form</h2>
+                    </div>
+                    <div class="input-name"><input type="text" placeholder="Name"></div>
+                    <div class="input-email"><input type="email" placeholder="E-mail"></div>
+                    <div class="input-subject"><input type="text" placeholder="Subject"></div>
+                    <div class="input-msg"><textarea name="null" rows="5" cols="4" id="textarea"
+                            placeholder="Message"></textarea></div>
+                    <div class="input-button"><button onclick='alertMsg()'>SEND MESSAGE NOW</button></div>
+
+                </div>
+   {% endblock  %}

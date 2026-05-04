@@ -1,0 +1,151 @@
+/* HERO */
+.hero {
+  height: 60vh;
+ background: linear-gradient(135deg, #50596c12, #1e293b);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 16px;
+  border-radius: 47px;
+}
+
+.hero-badge {
+  background: rgba(99, 102, 241, 0.2);
+  color: #a5b4fc;
+  font-size: 12px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.hero h1 .highlight {
+  color: #818cf8;
+}
+
+.hero p {
+  font-size: 16px;
+  color:#fff;
+  max-width: 440px;
+  line-height: 1.6;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.btn-primary {
+  background: #6366f1;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn-primary:hover { background: #4f46e5; }
+
+.btn-outline {
+  background: transparent;
+  color: #e2e8f0;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.btn-outline:hover { background: rgba(255,255,255,0.05); }
+
+/* PROJECTS */
+.projects {
+  padding: 60px 24px;
+  background: linear-gradient(to left, #50596c12, #1e293b);
+border-radius: 30px;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.projects-header h2 {
+  font-size: 30px;
+  color: #fbfcfe;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.projects-header p {
+  font-size: 14px;
+  color: #fbfcfe;
+}
+
+.pro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 24px;
+}
+
+.pro-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.25s, box-shadow 0.25s;
+  cursor: pointer;
+}
+
+.pro-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.1);
+}
+
+.pro-card img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.pro-card:hover img { transform: scale(1.05); }
+
+.pro-card-body {
+  padding: 14px 16px;
+}
+
+.pro-card-body h3 {
+  font-size: 15px;
+  color: #111827;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.pro-card-body p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.pro-tag {
+  display: inline-block;
+  background: #eef2ff;
+  color: #4338ca;
+  font-size: 11px;
+  padding: 3px 9px;
+  border-radius: 4px;
+  margin-top: 10px;
+}

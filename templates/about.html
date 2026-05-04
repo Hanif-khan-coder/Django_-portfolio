@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+{% block home_css %}
+<link rel="stylesheet" href="{% static 'css/about.css' %}">
+{% endblock %}
+{% block content %}
+
+<section class="about">
+
+  <div class="about-container">
+
+    <!-- IMAGE -->
+    <div class="about-img">
+      <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1" alt="About Image">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="about-content">
+      <h2>About Me</h2>
+
+      <p>
+        I am a passionate Software Engineer focused on Django and modern web development.
+        I enjoy building clean, responsive, and user-friendly applications using Python, HTML,
+        CSS, and Tailwind CSS.
+      </p>
+
+      <p>
+        Currently, I am improving my skills in backend development and UI design.
+        My goal is to become a professional full-stack developer and work on real-world projects.
+      </p>
+
+      <a href="#" class="about-btn">Download CV</a>
+    </div>
+
+  </div>
+
+</section>
+
+{% endblock %}

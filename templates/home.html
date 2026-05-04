@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}"/>
+
+<section class="hero">
+  <span class="hero-badge">Available for work</span>
+  <h1>Hi, I'm <span class="highlight">Hanif Khan</span></h1>
+  <p>Full Stack Developer crafting clean, scalable web apps with Django & modern frontend tools.</p>
+  {% comment %} <div class="hero-btns">
+    <a href="{% url 'projects' %}" class="btn-primary">View Projects</a>
+    <a href="{% url 'contact' %}" class="btn-outline">Contact Me</a>
+  </div> {% endcomment %}
+</section>
+
+<section class="projects">
+  <div class="projects-header">
+    <h2>Featured Projects</h2>
+    <p>Things I've built and am currently working on</p>
+  </div>
+  <div class="pro-grid">
+
+    <div class="pro-card">
+      <img src="{% static 'images/pro1.webp' %}" alt="Portfolio Website" />
+      <div class="pro-card-body">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio built with Django & CSS.</p>
+        <span class="pro-tag">Django</span>
+      </div>
+    </div>
+
+    <div class="pro-card">
+      <img src="{% static 'images/pro2.jpg' %}" alt="E-Commerce Store" />
+      <div class="pro-card-body">
+        <h3>E-Commerce Store</h3>
+        <p>Full-featured store with cart and payments.</p>
+        <span class="pro-tag">Django + Stripe</span>
+      </div>
+    </div>
+
+    <div class="pro-card">
+      <img src="{% static 'images/pro3.jpg' %}" alt="Blog Project" />
+      <div class="pro-card-body">
+        <h3>Blog Project</h3>
+        <p>Blog platform with rich text and user auth.</p>
+        <span class="pro-tag">Django + CKEditor</span>
+      </div>
+    </div>
+
+    <div class="pro-card">
+      <img src="{% static 'images/pro4.jpg' %}" alt="Chat Application" />
+      <div class="pro-card-body">
+        <h3>Chat Application</h3>
+        <p>Real-time chat using Django Channels.</p>
+        <span class="pro-tag">Django Channels</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}
